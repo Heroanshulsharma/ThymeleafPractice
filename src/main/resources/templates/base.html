@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" exlns:th="http://www.thymeleaf.org"
+	th:fragment="layout(content)">
+
+<head>
+
+<link rel="stylesheet" th:href="@{/style.css}" />
+
+
+</head>
+
+<body>
+	<h1>This is common header</h1>
+
+	<div th:replace="${content}"></div>
+
+	<h2>this is common footer</h2>
+
+</body>
+
+</html>

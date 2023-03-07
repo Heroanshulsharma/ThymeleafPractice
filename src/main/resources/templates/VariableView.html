@@ -1,0 +1,15 @@
+
+<html>
+<h1>Thymeleaf</h1>
+<h2 th:text="'Name of owner is: ' +${name}"></h2>
+<h3 th:text="${'In Upper Case: ' + #strings.toUpperCase(name)}"></h3>
+
+<div th:with="a=5, b=20, n=Priya+' '+Tripathi">
+
+<span th:text="${name} + ' loves ' +${n}">
+</span>
+
+</div>
+
+
+</html>

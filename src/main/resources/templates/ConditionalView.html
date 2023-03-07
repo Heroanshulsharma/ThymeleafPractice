@@ -1,0 +1,17 @@
+<html>
+<h1>Conditional Statement</h1>
+
+
+<div th:each="n:${list}">
+<span th:if="${n%2}=='0'"> EVEN
+</span>
+<span th:unless="${n%2}=='0'">ODD</span>
+</div>
+<h3 th:text="${switchList}"></h3>
+
+<div th:switch="${#lists.size(switchList)}">
+		<h1 th:case="'0'">Khaali he</h1>
+		<h1 th:case="'1'">ek hi he</h1>
+		<h1 th:case="*">Bhari pdi he</h1>
+	</div>
+</html>

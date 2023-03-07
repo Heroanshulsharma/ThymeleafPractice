@@ -1,0 +1,17 @@
+<html>
+<head>Iterations
+</head>
+<title>Iterations</title>
+<body>
+	<div th:each="n, status: ${list}">
+
+		<ul>
+			<li th:text="${n} + ${status}"
+				th:style="${status.even}?'color:red;font-weight:bold':'color:green;font-weight:italic'"></li>
+		</ul>
+
+	</div>
+
+	
+</body>
+</html>
